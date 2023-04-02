@@ -33,7 +33,7 @@ do{
     }
 
     if(malaEleccion==false){
-        while(opcion.toUpperCase()!='S' && opcion.toUpperCase()!='N'){
+        do{
         opcion = prompt("¿Desea usted continuar comprando pasajes?, 'S' para comprar nuevamente, 'N' para no");
         if (opcion.toUpperCase() == 'S'){
             fin = false;
@@ -47,7 +47,7 @@ do{
         else{
             console.log("Opcion incorrecta, elija S o N"); 
         }
-        }
+        } while (opcion.toUpperCase()!='S' && opcion.toUpperCase()!='N');
     }
     else{
         fin = false;
